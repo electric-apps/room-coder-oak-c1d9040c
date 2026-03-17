@@ -1,44 +1,31 @@
-# Kyle's Stack
+# Todos
 
-A starter for building apps with TanStack Start, Radix UI, and capsize typography — with [`@tanstack/intent`](https://github.com/TanStack/intent) skills pre-installed for **Electric**, **TanStack DB**, and **Durable Streams**.
+A real-time todo app built with Electric SQL + TanStack DB. Add, complete, and delete todos with instant optimistic updates synced across all connected clients.
 
-## Quick Start
+![Screenshot placeholder](https://via.placeholder.com/800x400?text=Todo+App+Screenshot)
+
+## Features
+
+- Add todos with a title
+- Mark todos as complete/incomplete
+- Delete individual todos
+- Clear all completed todos at once
+- Real-time sync across browser tabs and devices (via Electric SQL)
+- Optimistic UI updates — changes feel instant
+
+## How to Run
 
 ```bash
-npx gitpick KyleAMathews/kpb my-app
-cd my-app
 pnpm install
-pnpm dev
+pnpm dev:start
 ```
 
-## Included Skills
+The app runs at `http://localhost:5173`.
 
-This starter comes with skills pre-installed. Just ask your coding agent:
+## Tech Stack
 
-**Electric** — Sync Postgres to your app
-- "Set up Electric sync for my Postgres database"
-- "Run the Electric security checklist"
-
-**TanStack DB** — Reactive client-side data
-- "Add a TanStack DB collection for the users table"
-- "Set up live queries for my todos"
-
-**Durable Streams** — Real-time state sync
-- "Set up a Durable Streams dev environment"
-- "Add presence tracking to my app"
-
-**Radix + Capsize** — Typography
-- "Switch to the Playfair theme"
-- "Show me more font theme options"
-
-## What's Included
-
-- **TanStack Start** - Full-stack React framework
-- **Radix UI** - Accessible components with themes
-- **Capsize typography** - Pixel-perfect text rendering
-- **Dozens of font pairings included** - Ask the agent to set one up
-- **Biome** - Fast linting and formatting
-
-## License
-
-MIT
+- **Electric SQL** — Postgres-to-client real-time sync
+- **TanStack DB** — Reactive collections and live queries
+- **Drizzle ORM** — Schema definition and migrations
+- **TanStack Start** — React meta-framework with SSR
+- **Radix UI Themes** — Accessible component library
